@@ -14,7 +14,8 @@ export function useGladiators() {
         setError(e.message);
       }
     };
-  });
+    loadData();
+  }, []);
 
   return { gladiators, error };
 }
