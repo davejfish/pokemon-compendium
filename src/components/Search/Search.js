@@ -2,6 +2,12 @@ import './Search.css';
 
 export default function Search() {
   return (
-    <div>Search</div>
+    <form>
+      <label>
+        Search
+        <input type="text" name="Input"></input>
+        <button value="submit">Submit</button>
+      </label>
+    </form>
   );
 }
