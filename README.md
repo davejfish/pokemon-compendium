@@ -44,3 +44,4 @@
 - add event handler for clicking search button
 
 ![Planning docs image](./public/Planning2.png)
+![Planning docs image](./public/wireframe.png)

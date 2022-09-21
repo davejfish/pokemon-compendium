@@ -7,6 +7,7 @@ export function useGladiators() {
   const [loading, setLoading] = useState(false);
   const [types, setType] = useState([]);
   const [selectedType, setSelectedType] = useState('all');
+  const [name, setName] = useState('');
 
   useEffect(() => {
     const loadData = async () => {
