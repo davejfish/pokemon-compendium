@@ -5,8 +5,6 @@ export async function fetchGladiators(selectedType) {
     params.set('type', selectedType);
   }
 
-  console.log('params: ', params);
-
   const response = await fetch(`
     https://pokedex-alchemy.herokuapp.com/api/pokedex?${params.toString()}
   `);
