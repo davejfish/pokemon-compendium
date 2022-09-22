@@ -7,13 +7,12 @@ export function useGladiators() {
   const [loading, setLoading] = useState(false);
   const [types, setType] = useState([]);
   const [selectedType, setSelectedType] = useState('all');
-  const [name, setName] = useState('');
 
   useEffect(() => {
     const loadData = async () => {
       try {
         setLoading(true);
-        const response = await fetchGladiators(selectedType, name);
+        const response = await fetchGladiators(selectedType);
         setGladiators(response);
         setLoading(false);
       } catch (e) {
@@ -22,7 +21,7 @@ export function useGladiators() {
       }
     };
     loadData();
-  }, [selectedType, name]);
+  }, [selectedType]);
 
   useEffect(() => {
     const loadTypes = async () => {
@@ -37,5 +36,5 @@ export function useGladiators() {
     loadTypes();
   }, []);
 
-  return { gladiators, error, loading, types, setSelectedType, setName };
+  return { gladiators, error, loading, types, setSelectedType };
 }
