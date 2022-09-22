@@ -4,13 +4,24 @@
   align-items: center;
   width: 60vw;
   min-width: 800px;
-  height: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #FB1B1B;
+  background-image: url('../../../public/option2.jpg');
+  background-position: center;
+  background-size: cover;
+  position: static;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
 }
 
 .title {
-  color: #FFCC00;
+  color: black;
+  font-size: 5rem;
 }
 
 .controls {
