@@ -1,0 +1,53 @@
+.gladCard {
+  display: grid;
+  grid-template-areas: 
+    'imgBox imgBox name name'
+    'imgBox imgBox typeOne typeTwo'
+    'imgBox imgBox pokeUrl pokeUrl';
+  width: 300px; 
+  margin: 30px;
+  background-color: white;
+}
+
+.gladCard:hover {
+  box-shadow: 5px 10px white;
+}
+
+.name {
+  grid-area: name;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.typeOne {
+  grid-area: typeOne;
+  margin-left: 50px;
+}
+
+.typeTwo {
+  grid-area: typeTwo;
+  margin-left: 50px;
+}
+
+.pokeUrl {
+  grid-area: pokeUrl;
+  margin-left: 50px;
+}
+
+.imgBox {
+  grid-area: imgBox;
+  min-width: 80px;
+  min-height: 100px;
+  border: solid 3px black;
+  transform: rotate(45deg);
+  overflow: hidden;
+  background-color: #DFDFDF;
+}
+
+.contain {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  transform:rotate(310deg);
+}
