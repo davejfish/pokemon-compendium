@@ -1,8 +1,12 @@
-export async function fetchGladiators(selectedType) {
+export async function fetchGladiators(selectedType, name) {
   const params = new URLSearchParams();
 
   if (selectedType !== 'all') {
     params.set('type', selectedType);
+  }
+
+  if (name !== '') {
+    params.set('pokemon', name);
   }
 
   const response = await fetch(`
