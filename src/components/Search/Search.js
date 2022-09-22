@@ -13,7 +13,7 @@ export default function Search({ queryHandler }) {
   };
 
   return (
-    <form onSubmit={(e) => {handleSubmit(e);}}>
+    <form className='searchForm' onSubmit={(e) => {handleSubmit(e);}}>
       <label>
         Search
         <input name="input"></input>
