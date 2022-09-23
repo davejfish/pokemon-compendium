@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 60vw;
-  min-width: 800px;
+  min-width: 400px;
   height: 100vh;
   background-color: #FB1B1B;
   background-image: url('../../../public/option2.jpg');
@@ -30,7 +30,8 @@
 
 .collection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
   grid-gap: 25px;
-  min-width: 350px;
+  min-width: 325px;
+  max-width: 70%;
 }
