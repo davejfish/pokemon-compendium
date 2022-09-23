@@ -1,3 +1,6 @@
 .typeSelect {
-  margin: 20px;
+  margin: 25px;
+  padding: 1.5px;
+  height: fit-content;
+  align-self: auto;
 }
